@@ -1,4 +1,15 @@
 from math import *
+from random import *
+#6 
+a=randint(1,100)
+b=randint(1,100)
+c=randint(1,100)
+print(f"Külg a={a}\nKülg b={b}\nKülg c={c}")
+print(f"Kolmnurga ümbermõõt = {a+b+c}")
+print()
+
+
+
 #1
 print("Puu läbimõõdu arvutamine")
 C=float(input("Puu ümbermõõt: "))
@@ -13,8 +24,20 @@ d=sqrt(N**2+M**2)
 print(f"Maatüki diagonaal on {d} m**2")
 
 #3
+#4
+A1=int(input("Sisesta 1. arv => "))
+A2=int(input("Sisesta 2. arv => "))
+A3=int(input("Sisesta 3. arv => "))
+A4=int(input("Sisesta 4. arv => "))
+A5=int(input("Sisesta 5. arv => "))
+Keskmine=(A1+A2+A3+A4+A5)/5
+print(f"Keskmine on {Keskmine}")
 
-
+#5
+print("    @..@")
+print("   (----)")
+print("  ( \__/ )")
+print("  ^^ "'""'" ^^ ") 
 
 
 
