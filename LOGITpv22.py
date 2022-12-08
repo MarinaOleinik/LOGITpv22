@@ -1,5 +1,6 @@
 from math import *
 from random import *
+# 08.12.22
 #6 
 a=randint(1,100)
 b=randint(1,100)
@@ -8,13 +9,12 @@ print(f"Külg a={a}\nKülg b={b}\nKülg c={c}")
 print(f"Kolmnurga ümbermõõt = {a+b+c}")
 print()
 
-
-
 #1
 print("Puu läbimõõdu arvutamine")
 C=float(input("Puu ümbermõõt: "))
 d=2*(C/(2*pi))
 print(f"Vastus:\nPuu läbimõõduga {C} ümbermõõt võrdub {d}")
+print()
 
 #2
 print("Ristkülikukujulise maatüki diagonaal")
@@ -22,8 +22,10 @@ N=float(input("Sisesta ristküliku 1. külje pikkus => "))
 M=float(input("Sisesta ristküliku 2. külje pikkus => "))
 d=sqrt(N**2+M**2)
 print(f"Maatüki diagonaal on {d} m**2")
+print()
 
 #3
+
 #4
 A1=int(input("Sisesta 1. arv => "))
 A2=int(input("Sisesta 2. arv => "))
@@ -39,10 +41,8 @@ print("   (----)")
 print("  ( \__/ )")
 print("  ^^ "'""'" ^^ ") 
 
-
-
 #--------------------------------
- 
+ # 07.12.22
 print()
 print("Ruudu karakteristikud")
 a=float(input("Sisesta ruudu külje pikkus => "))
