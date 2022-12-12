@@ -1,6 +1,70 @@
 from math import *
 from random import *
+#12/12/22
+print("Nädalapäevad")
+try:
+    p=int(input("Mis päev täna on?"))
+    if p==1:
+        n="esmaspäev"
+    elif p==2:
+        n="teisipäev"
+    elif p==3:
+        n="kolmapäev"
+    elif p==4:
+        n="neljapäev"
+    elif p==5:
+        n="reede"
+    elif p==6:
+        n="laupäev"
+    elif p==7:
+        n="pühapäev"
+    else:
+        n="vale number"
+    print(n)  
+except:
+    print("Viga")
+
+
+
+
+
+
+
+try:
+    hinne=int(input("Mis hinne täna said koolis"))
+except:
+    print("!!!!!!")
+if hinne==5:
+    print("Väga hea!")
+elif hinne==4:
+    print("Hea!")
+elif hinne==3:
+    print("Rahuldav")
+elif hinne==2 or hinne==1: #and, or, not, !=ei võrdu, <, >, >=,<=
+    print("Mitte rahuldav!")
+else:
+    print("Viga!")
+
+
 # 08.12.22
+#4
+try:
+    A1=int(input("Sisesta 1. arv => "))
+except:
+    print("Vale andmetüüp!")
+    A1=0
+try:
+    A2=int(input("Sisesta 2. arv => "))
+except:
+    print("Vale andmetüüp!")
+    A2=0
+
+A3=int(input("Sisesta 3. arv => "))
+A4=int(input("Sisesta 4. arv => "))
+A5=int(input("Sisesta 5. arv => "))
+Keskmine=(A1+A2+A3+A4+A5)/5
+print(f"Keskmine on {Keskmine}")
+
 #6 
 a=randint(1,100)
 b=randint(1,100)
@@ -26,14 +90,7 @@ print()
 
 #3
 
-#4
-A1=int(input("Sisesta 1. arv => "))
-A2=int(input("Sisesta 2. arv => "))
-A3=int(input("Sisesta 3. arv => "))
-A4=int(input("Sisesta 4. arv => "))
-A5=int(input("Sisesta 5. arv => "))
-Keskmine=(A1+A2+A3+A4+A5)/5
-print(f"Keskmine on {Keskmine}")
+
 
 #5
 print("    @..@")
@@ -41,7 +98,7 @@ print("   (----)")
 print("  ( \__/ )")
 print("  ^^ "'""'" ^^ ") 
 
-#--------------------------------
+#-------------------------------
  # 07.12.22
 print()
 print("Ruudu karakteristikud")
