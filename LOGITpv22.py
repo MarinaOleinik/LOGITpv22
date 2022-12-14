@@ -1,5 +1,18 @@
 from math import *
 from random import *
+#13/12/22
+
+r=randint(-100,100)
+a=randint(-100,100)
+print(f"r={r}\na={a}")
+if r>0 and a>0:
+    pass
+else:
+    print(f"{a} ja {r} peavad > kui 0 olla")
+
+print()
+
+
 #12/12/22
 print("Nädalapäevad")
 try:
