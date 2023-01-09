@@ -1,5 +1,15 @@
 from math import *
 from random import *
+#09/01/23
+
+for i in range(2, 12, 3):
+    print(i, end=" ")
+print()
+for i in range(12, 2, -2):
+    print(i, end=" ")
+print()
+
+
 #21/12/22
 #3
 while True:
