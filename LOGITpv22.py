@@ -1,5 +1,19 @@
 from math import *
 from random import *
+#11/01/23
+for i in range(1,5):
+    x=str("*"*i).center(18," ")
+    print(x, end="")
+    print()
+for i in range(1,7):
+    x=str("*"*(i+2)).center(18," ")
+    print(x, end="")
+    print()
+for i in range(1,10):
+    x=str("*"*(i+4)).center(18," ")
+    print(x, end="")
+    print()
+
 #09/01/23
 #Использование цикла WHILE 
 
