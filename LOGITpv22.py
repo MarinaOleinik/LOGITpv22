@@ -1,6 +1,16 @@
 from math import *
 from random import *
-#11/01/23
+#16/01/23
+
+katsed=0
+answer=""
+while answer!="komm":
+    answer=input("Tahan kommi!")
+    katsed+=1
+print(f"Katsed: {katsed}")
+print()
+
+#11/01/23 Kuusk
 for i in range(1,5):
     x=str("*"*i).center(18," ")
     print(x, end="")
