@@ -12,7 +12,7 @@ max_arv=max(arvud)
 ind=arvud.index(max_arv)
 print(ind)
 print(max_arv)
-max_arv=max_arv/kogus
+max_arv=round(max_arv/kogus,2)
 arvud.insert(ind,max_arv)
 arvud.pop(ind+1)
 print(arvud)
