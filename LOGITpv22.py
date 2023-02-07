@@ -1,5 +1,6 @@
 from math import *
 from random import *
+from OmaModul import *
 #3/03/23
 arvud=[]
 isikukoodid=[]
@@ -38,21 +39,13 @@ while True:
                 kontrollnr=0
                 
                 hhh=int(ik_list[8]+ik_list[9]+ik_list[10])
-                if 1<=hhh<=10:
-                    haigla="kuresaare Haigla"
-                elif 11<=hhh<=19:
-                    haigla="Tartu Ülikooli Naistekliinik, Tartumaa, Tartu"
-                elif 21<=hhh<=220:
-                    haigla="Ida-Tallinna Keskhaigla, Pelgulinna sünnitusmaja, Hiiumaa, Keila, Rapla haigla, Loksa haigla"
-                else:
-                    haigla=" ---"
-
-                if int(ik_list[0])%2==0:
-                    sugu="naine"
-                else:
-                    sugu="mees"
+                #
+                haigla=Sunnikoht(hhh)
+                #
+                sugu=Sugu(ik_list)
                 print(f"See in {sugu}, sünnipäev{spaev}. Ta on sündinud {haigla}")
                 isikukoodid.append(ik)
+
 print(isikukoodid)
 arvud=list(map(int,arvud))
 arvud.sort()
