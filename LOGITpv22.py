@@ -1,7 +1,27 @@
 from math import *
 from random import *
 from OmaModul import *
-#3/03/23
+#13/02/23
+kuupaev=date_(int(input("Kuupäev:")),int(input("Kuu:")),int(input("Aasta:")))
+print(kuupaev)
+
+
+
+#10/02/23
+vastus=is_year_leap(input("Aasta:"))
+print(vastus)
+#või
+print(is_year_leap(input("Aasta:")))
+
+
+while True:
+    vastus=arithmetic(float(input("arv1:")),input("tehe:"),float(input("arv2:")))
+    print(vastus)
+
+
+
+
+#3/02/23
 arvud=[]
 isikukoodid=[]
 
@@ -20,20 +40,11 @@ while True:
             arvud.append(ik)
         else:
             print("Esimene sümbol on õige")
-            y=ik_list[1]+ik_list[2] #aasta
-            m=ik_list[3]+ik_list[4] #kuu
-            d=ik_list[5]+ik_list[6] #päev
-            if (int(m)<1 or int(m)>13) and (int(d)<1 or int(d)>31):
-                print("Sünnipäev ei saa luua")
+            spaev=Sunnipaev(ik_list)
+            if spaev=="Viga":
                 arvud.append(ik)
             else:
-                if s1==1 or s1==2:
-                    yy="18"
-                elif s1==3 or s1==4:
-                    yy="19"
-                else:
-                    yy="20"
-                spaev=d+"."+m+"."+yy+y #ei ole 18..,19..,20..
+                #
                 print(f"Sünnipäev on {spaev}")
                 print(f"Viimane number: {ik_list[-1]}")
                 kontrollnr=0
@@ -45,11 +56,24 @@ while True:
                 sugu=Sugu(ik_list)
                 print(f"See in {sugu}, sünnipäev{spaev}. Ta on sündinud {haigla}")
                 isikukoodid.append(ik)
-
+print(isikukoodid) #
+isikukoodid=naised_mehed(isikukoodid) #sort alguses naised ja pärast mehed
 print(isikukoodid)
 arvud=list(map(int,arvud))
 arvud.sort()
 print(arvud)
+
+
+
+
+
+
+
+
+
+
+
+
 
 #31/01/23
 #3

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7f6d66a1-0bd3-4eb2-8b63-ac4339b64fdd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>LOGITpv22.py</StartupFile>
+    <StartupFile>Reg_Avtor.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="LOGITpv22.py" />
     <Compile Include="OmaModul.py" />
+    <Compile Include="Reg_Avtor.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
